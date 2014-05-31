@@ -1,0 +1,191 @@
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+ 
+.clearfix {
+    display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+    display: block;
+}
+ 
+* html .clearfix {
+    height: 1%;
+}
+
+html,body{
+	margin: 0;
+	padding: 0;
+	background-color: #ddd;
+	font-family: "Arial";
+}
+
+
+/* HEADER */
+
+header#main{
+	overflow: hidden;
+	width: 70%;
+	margin-left: 15%;
+	background-color: #2195de;
+	height: 150px;
+}
+
+	header > img{
+		float: right;
+	}
+
+	.title{
+		float: right;
+		font-size: 50px;
+		font-weight: bold;
+		color: white;
+		padding: 40px;
+	}
+/* END HEADER */
+
+
+/* Nav */
+
+nav{
+	text-align: center;
+	width: 70%;
+	margin-top: 10px;
+	margin-left: 15%;
+	background-color: #2195de;
+}
+
+.cl-effect-2 > a{
+	margin: 0;
+}
+
+.cl-effect-2 a:hover span, .cl-effect-2 a:focus span{
+	text-align: center;
+}
+
+#cl-effect-2{
+	transition: box-shadow 1s;
+}
+/* END NAV*/
+
+
+/* SLIDESHOW */
+
+#slideshow{
+	margin-top: 10px;
+	height: 450px;
+	width: 70%;
+	margin-left: 15%;
+	overflow: hidden;
+	position: relative;
+}
+	.titre-article{
+		color: white;
+		font-size: 35px;
+		width: 100%;
+		text-align: center;
+		margin-top: 30%;
+	}
+
+	#slideshow > div{
+		transition:margin-left 1s;
+		width: 400%;
+	}
+		#slideshow > div > article{
+			float: left;
+			background-image: url(http://wallpaper.metalship.org/images/megadeth2.jpg);
+			background-size: 100%;
+			width: 25%;
+			height: 450px;
+		}
+
+
+	#left-arrow,#right-arrow{
+		font-size: 50px;
+		top:40%;
+		color: white;
+		position: absolute;
+		cursor: pointer;
+		opacity: 0.7;
+		transition:opacity 1s;
+	}
+		#left-arrow:hover,#right-arrow:hover{
+			opacity: 0.9;
+		}
+
+	#right-arrow{
+		right: 20px;
+	}
+	
+	#left-arrow{
+		left: 20px;
+	}
+
+/* END SLIDSHOW */
+
+
+
+/* NEWS LIST */
+
+#news{
+	background-color: white;
+	width: 70%;
+	margin-left: 15%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 15px 0;
+
+}
+	#news > article{
+		border-bottom:1px dashed #000;
+		width: 95%;
+		margin-left: 2.5%;
+		text-align: left;
+		padding: 15px 0;
+		cursor: pointer;
+	}
+
+	#news > article > img{
+		border-radius: 100%;
+		margin: 5px 35px 5px 5px;
+		height: 120px;
+		width: 120px;
+		float: left;
+		opacity: 1;
+		transition:opacity 1s;
+	}
+
+		#news > article:hover > img{
+			opacity: 0.7;
+		}
+
+	#news > article > header{
+		margin-top: 15px;
+		font-size:22px;
+		transition:all 1s;
+	}
+
+		#news > article:hover > header{
+			text-decoration: underline;
+		}
+
+	#new > article > p{
+
+	}
+	
+/* END NEWS LIST */
+
+
+
+/* Copyright in Footer */
+
+footer{
+	text-align: center;
+	margin: 15px 0;
+}
